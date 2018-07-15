@@ -22,6 +22,8 @@ Explain how to run the automated tests for this system
 
 * [Spring Initializr](https://start.spring.io/) - Tool used to generate app skeleton
 * [Gradle](https://gradle.org/) - Dependency Management
+* [JaCoCo](http://jacoco.org/jacoco/) - Code Coverage Library
+* [PiTest](http://pitest.org/) - Mutation Testing
 
 ## Authors
 
