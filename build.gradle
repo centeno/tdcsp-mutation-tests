@@ -16,6 +16,7 @@ apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 apply plugin: 'info.solidsoft.pitest'
+apply plugin: 'jacoco'
 
 group = 'com.latam.mutation'
 version = '0.0.1-SNAPSHOT'
@@ -37,3 +38,11 @@ pitest {
 	timestampedReports = false
 	verbose = true
 }
+
+jacocoTestReport {
+	reports {
+		html.destination file("$buildDir/reports/jacoco/html")
+	}
+	executionData = files("$buildDir/jacoco/test.exec")
+}
+
