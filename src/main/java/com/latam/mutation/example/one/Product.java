@@ -1,4 +1,4 @@
-package com.latam.mutation;
+package com.latam.mutation.example.one;
 
 public class Product {
     public int getUnitPrice(int amount, boolean coupon) {
