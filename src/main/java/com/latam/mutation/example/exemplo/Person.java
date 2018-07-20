@@ -1,4 +1,4 @@
-package com.latam.mutation.example.two;
+package com.latam.mutation.example.exemplo;
 
 public class Person {
 

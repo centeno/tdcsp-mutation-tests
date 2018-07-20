@@ -1,4 +1,4 @@
-package com.latam.mutation.example.two;
+package com.latam.mutation.example.exemplo;
 
 import org.junit.Before;
 import org.junit.Test;
