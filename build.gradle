@@ -32,7 +32,7 @@ dependencies {
 }
 
 pitest {
-	targetClasses = ['com.latam.mutation.*']  //by default "${project.group}.*"
+	targetClasses = ['com.latam.mutation.*']
 	threads = 4
 	outputFormats = ['XML', 'HTML']
 	timestampedReports = false
@@ -46,3 +46,6 @@ jacocoTestReport {
 	executionData = files("$buildDir/jacoco/test.exec")
 }
 
+test {
+	finalizedBy jacocoTestReport
+}

@@ -13,15 +13,15 @@ public class NameParserTest {
     @Before
     public void setUp() {
         nameParser = new NameParser();
-        names = new String[] {"Ricardo Gaete", "Diego Centeno"};
+        names = new String[] {"Neymar Junior", "Renato Augusto"};
     }
 
     @Test
     public void shouldFindPersonByLastName() {
-        Person person = nameParser.findPersonWithLastName(names,"Centeno");
+        Person person = nameParser.findPersonWithLastName(names,"Augusto");
         String firsName = person.getFirstName();
         String lastName = person.getLastName();
-        assertEquals("Diego",firsName);
+        assertEquals("Renato",firsName);
     }
 
     /*
